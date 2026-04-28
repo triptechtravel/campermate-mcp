@@ -2,7 +2,7 @@
 
 The Model Context Protocol server for [CamperMate](https://campermate.com) — Australia and New Zealand's leading travel app for campers, caravanners, and road-trippers.
 
-Gives MCP-compatible AI assistants (Claude Desktop, Cursor, Windsurf, etc.) access to thousands of campsites, holiday parks, freedom camps, dump stations, supermarkets, and attractions across AU/NZ — with reviews, ratings, deals, and tracked booking links.
+Gives MCP-compatible AI assistants (Claude Desktop, Cursor, Windsurf, etc.) access to thousands of campsites, freedom camps, walking trails, scenic spots, and tourist attractions across AU/NZ — with reviews, ratings, deals, and tracked booking links.
 
 ## Endpoint
 
@@ -79,23 +79,21 @@ Any MCP client that speaks Streamable HTTP — Cursor, Windsurf, Continue, custo
 Once installed, try asking your assistant:
 
 - "Plan me a 5-night campervan trip from Auckland to Wellington with a moderate budget."
-- "Find pet-friendly holiday parks near Byron Bay with at least a 4-star rating."
-- "What dump stations are within 20km of Lake Tekapo?"
+- "Find paid campsites near Byron Bay with at least a 4-star rating."
+- "What walking trails are within 20km of Lake Tekapo?"
 - "Compare the top three freedom camping spots on the Coromandel."
 - "I'm self-contained — where can I freedom-camp near Queenstown tonight?"
+- "Show me scenic spots and tourist attractions along the Great Ocean Road."
 
 ## Scope
 
-Covers Australia and New Zealand:
+Covers Australia and New Zealand. Categories accessible via MCP:
 
-- Campsites (paid and free/freedom)
-- Holiday parks
-- Dump stations, potable water, toilets
-- Supermarkets, bakeries, fuel
-- Scenic spots, walks, tourist attractions
-- Deals from partner operators
+- **Accommodation** — paid campsites (including holiday parks) and free/freedom campsites
+- **Activities** — tourist attractions, scenic spots, scenic flights, walking and hiking, water activities, cultural places, museums, food & beverage
+- **Deals and bookings** from partner operators
 
-Not exposed via MCP (app-only): live availability, offline maps, trip save, full-resolution community photos, real-time deal updates. The MCP responses include tracked links to the CamperMate iOS and Android apps for users who want the full experience.
+Not exposed via MCP (app-only): amenity POIs (dump stations, potable water, toilets, supermarkets, bakeries, fuel), live availability, offline maps, trip save, full-resolution community photos, real-time deal updates. The MCP responses include tracked links to the CamperMate iOS and Android apps for users who want the full experience.
 
 ## Attribution and privacy
 
