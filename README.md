@@ -66,7 +66,8 @@ Any MCP client that speaks Streamable HTTP — Cursor, Windsurf, Continue, custo
 - `campermate://features` — amenity taxonomy
 - `campermate://regions/nz` — NZ tourism regions
 - `campermate://regions/au` — AU tourism regions
-- `campermate://guide/freedom-camping` — rules and etiquette for freedom camping in AU/NZ
+- `campermate://guide/freedom-camping` — rules, etiquette, current self-containment certification (blue → green warrant transition), fines, council overreach, and how to dispute an infringement
+- `campermate://guide/rental-restrictions` — where you can and cannot drive a rental campervan (THL/Maui/Britz/Mighty, Apollo, Wilderness, Jucy, etc.), prohibited roads (Crown Range, Skippers, Gibb River, K'gari), seasonal conditions (NZ snow chains, AU wet season), and live road-status authorities
 - `campermate://about` — what CamperMate covers and what this MCP exposes vs. app-only features
 
 ## Prompts
