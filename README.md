@@ -61,6 +61,7 @@ Any MCP client that speaks Streamable HTTP — Cursor, Windsurf, Continue, custo
 | `list_categories` | All POI categories with counts, grouped by parent category. |
 | `list_features` | All amenities/features (Wi-Fi, pet-friendly, etc.) with counts. |
 | `list_regions` | Tourism regions with counts — maps fuzzy input ("South Island", "Tasmania") to concrete regions. |
+| `list_guides` | CamperMate editorial guides and blog posts (route guides, seasonal tips, freedom-camping how-tos). Filter by keyword or get the latest. Each result has a tracked link back to campermate.com/blog. |
 
 ## Resources
 
@@ -71,6 +72,8 @@ Any MCP client that speaks Streamable HTTP — Cursor, Windsurf, Continue, custo
 - `campermate://guide/freedom-camping` — rules, etiquette, current self-containment certification (blue → green warrant transition), fines, council overreach, and how to dispute an infringement
 - `campermate://guide/rental-restrictions` — where you can and cannot drive a rental campervan (THL/Maui/Britz/Mighty, Apollo, Wilderness, Jucy, etc.), prohibited roads (Crown Range, Skippers, Gibb River, K'gari), seasonal conditions (NZ snow chains, AU wet season), and live road-status authorities
 - `campermate://about` — what CamperMate covers and what this MCP exposes vs. app-only features
+- `campermate://about/list-your-business` — operator-onboarding landing pages (sales.campermate.com) and business login
+- `campermate://about/newsletter` — tracked newsletter signup link
 
 ## Prompts
 
@@ -107,6 +110,7 @@ Not exposed via MCP (app-only): standalone amenity POIs (e.g. a public roadside 
 - Booking links to partner sites are tagged with `user_id=anonymous_mcp` and the POI id, plus standard UTMs.
 - Every POI in search results carries an `images` array with `url` / `thumbnail_url` / `hero_url` variants for AI clients that render images.
 - Every response carries an `attribution` block (`source`, `badge_text`, `badge_logo_url`, `link`). Third-party tools rendering MCP output should display the badge as a "Powered by CamperMate" credit.
+- Every response has an `app.link` — a single Branch.io universal link. On a device with the CamperMate app installed it opens the app at the right POI; otherwise it routes to App Store / Play Store with referrer attribution. Replaces the previous separate `app.ios` / `app.android` URLs.
 
 ## Support
 
