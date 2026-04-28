@@ -87,13 +87,15 @@ Once installed, try asking your assistant:
 
 ## Scope
 
-Covers Australia and New Zealand. Categories accessible via MCP:
+Covers Australia and New Zealand. POI **categories** accessible via MCP:
 
 - **Accommodation** — paid campsites (including holiday parks) and free/freedom campsites
 - **Activities** — tourist attractions, scenic spots, scenic flights, walking and hiking, water activities, cultural places, museums, food & beverage
 - **Deals and bookings** from partner operators
 
-Not exposed via MCP (app-only): amenity POIs (dump stations, potable water, toilets, supermarkets, bakeries, fuel), live availability, offline maps, trip save, full-resolution community photos, real-time deal updates. The MCP responses include tracked links to the CamperMate iOS and Android apps for users who want the full experience.
+Each POI also has a **features** array that may include on-site amenities — `On-site Dump Station`, hot/cold showers, flush/non-flush toilets, kitchen, laundry, Wi-Fi, phone signal, powered/unpowered sites, self-contained-only, and brand groups (TOP 10, BIG4, NRMA, etc.). These describe what's available *within* a POI; you can filter searches by them (`features: ["On-site Dump Station"]`).
+
+Not exposed via MCP (app-only): standalone amenity POIs (e.g. a public roadside dump station, a supermarket, a fuel stop on its own), live availability, offline maps, trip save, full-resolution community photos, real-time deal updates. The MCP responses include tracked links to the CamperMate iOS and Android apps for users who want the full experience.
 
 ## Attribution and privacy
 
