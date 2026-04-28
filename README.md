@@ -102,9 +102,11 @@ Not exposed via MCP (app-only): standalone amenity POIs (e.g. a public roadside 
 
 ## Attribution and privacy
 
-- No PII is collected. The server logs the user-agent string for analytics only.
-- Tool responses include tracked short URLs (`link`, `booking_link`) that record clicks for attribution. Users see a normal CamperMate destination URL after redirect.
-- Booking links to partner sites are tagged with `user_id=anonymous_mcp` and the POI id.
+- No PII is collected. The server logs the user-agent string and `Accept-Language` (for locale-routed CamperMate URLs) only.
+- Tool responses include tracked short URLs (`link`, `booking_link`, `directions_link`, `reviews.link`, `social.*_link`, `contact.website_link`) that record clicks for attribution. All resolve to standard CamperMate / partner / Google Maps destinations.
+- Booking links to partner sites are tagged with `user_id=anonymous_mcp` and the POI id, plus standard UTMs.
+- Every POI in search results carries an `images` array with `url` / `thumbnail_url` / `hero_url` variants for AI clients that render images.
+- Every response carries an `attribution` block (`source`, `badge_text`, `badge_logo_url`, `link`). Third-party tools rendering MCP output should display the badge as a "Powered by CamperMate" credit.
 
 ## Support
 
