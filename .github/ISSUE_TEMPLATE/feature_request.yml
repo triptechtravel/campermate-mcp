@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest a new tool, resource, guide, or capability.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+      placeholder: "When I ask Claude for X, the MCP can't help because..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to see?
+      description: A new tool, a new resource, an extra field on an existing response — describe it.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered (optional)

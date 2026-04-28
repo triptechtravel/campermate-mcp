@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: POI data is wrong (missing campsite, hours wrong, etc.)
+    url: https://campermate.com/contact
+    about: For corrections to specific POI data, please use the CamperMate app's POI report flow or our contact form. These flow into the editorial pipeline — issues here won't reach the data team.
+  - name: Download the CamperMate app
+    url: https://campermate.com
+    about: For trip planning with live availability, offline maps, and the full POI catalogue.

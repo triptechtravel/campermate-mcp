@@ -1,0 +1,61 @@
+name: Bug report
+description: Something the MCP returns is wrong, missing, or breaks the client.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. The more concrete the reproduction, the faster we can fix it.
+  - type: dropdown
+    id: client
+    attributes:
+      label: MCP client
+      description: Which client are you using to call the MCP?
+      options:
+        - Claude Desktop
+        - Cursor
+        - Windsurf
+        - Continue
+        - Custom / other (please describe in "Additional context")
+    validations:
+      required: true
+  - type: input
+    id: tool
+    attributes:
+      label: Tool called
+      description: e.g. search_pois, get_poi, find_nearby, compare_pois, list_categories, list_features, list_regions
+      placeholder: search_pois
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Prompt that triggered the issue
+      placeholder: "Plan me a 5-night campervan trip from Auckland to Wellington..."
+  - type: textarea
+    id: arguments
+    attributes:
+      label: Tool arguments (if visible)
+      description: Paste the JSON arguments your client sent to the tool, if you can see them.
+      render: json
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+  - type: input
+    id: request_id
+    attributes:
+      label: Request ID (if your client surfaces it)
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context

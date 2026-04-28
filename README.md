@@ -4,6 +4,8 @@ The Model Context Protocol server for [CamperMate](https://campermate.com) — A
 
 Gives MCP-compatible AI assistants (Claude Desktop, Cursor, Windsurf, etc.) access to thousands of campsites, freedom camps, walking trails, scenic spots, and tourist attractions across AU/NZ — with reviews, ratings, deals, and tracked booking links.
 
+> **About this repo.** This is documentation, install instructions, and example queries for the CamperMate MCP. The MCP server itself is hosted at `mcp.campermate.com` and is **closed source**. Issues for bugs, feature requests, and integration help are welcome — see [CONTRIBUTING](CONTRIBUTING.md). We don't accept source PRs (there's nothing to PR here).
+
 ## Endpoint
 
 ```
